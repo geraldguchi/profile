@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HTML</title>
+<title>Home</title>
 <link rel="stylesheet" href="./style.css">
 <style>
 .column {
@@ -31,8 +31,9 @@ Main Page
 <body>
 <div class="container">
 <div class="column">
+    
 <h2> Basketball</h2>
-
+<img src="./imgs/basketball.webp" class="mypic" style="margin-left: 160px;" alt="">
 <p> Basketball is a game played between two teams of five players each on a 
     rectangular court, usually indoors. 
     Each team tries to score by tossing the ball through the opponent's goal, 
@@ -42,11 +43,13 @@ Main Page
 </div>
 <div class="column">
 <h2> Volleyball </h2>
-<p> volleyball, game played by two teams, usually of six players on a side, in which the players use their hands to bat a ball back and forth over a high net, trying to make the ball touch the court within the opponents' playing area before it can be returned. </p>
+<img src="./imgs/volleyball.webp" class="mypic" style="margin-left: 160px;" alt="">
+<p> Volleyball, game played by two teams, usually of six players on a side, in which the players use their hands to bat a ball back and forth over a high net, trying to make the ball touch the court within the opponents' playing area before it can be returned. </p>
 </div>
 <div class="column">
 <h2> Soccer </h2>
-<p> a game played by two teams of eleven players with a round ball that may not be touched with the hands or arms during play except by the goalkeepers. The object of the game is to score goals by kicking or heading the ball into the opponents' goal. </p>
+<img src="./imgs/soccer.png" class="mypic" style="margin-left: 160px;" alt="">
+<p> A game played by two teams of eleven players with a round ball that may not be touched with the hands or arms during play except by the goalkeepers. The object of the game is to score goals by kicking or heading the ball into the opponents' goal. </p>
 </div>
 </div>
 <!-- footer Section -->
@@ -56,5 +59,24 @@ Main Page
 <a href = "contact.html">Contact Us</a>
 </div>
 </div>
+<script>
+
+    function getRandom(max, min){
+        return Math.floor(Math.random()*(max-min)+min);
+    }
+    
+    document.body.addEventListener('mouseover',newEvent());
+    
+    function newEvent(){
+        let color1, color2, color3,getRgb;
+        color1=getRandom(255,0);
+        color2=getRandom(255,0);
+        color3=getRandom(255,0);
+        getRgb = `rgb(${color1},${color2},${color3})`;
+    
+        document.body.style.background = getRgb;
+    }
+    
+    </script>
 </body>
 </html>

@@ -32,8 +32,8 @@ Blogs
 <div class="container">
 <div class="column">
 <h2> Categories </h2>
-<img src="https://cdn.pixabay.com/photo/2013/07/12/14/07/basketball-147794__340.png" width="100" height="100" >
-<p> #Sports 
+<img src="./imgs/basketball.webp" width="100" height="100" class="mypic" style="margin-left:170px">
+<p style="text-align: center;"> #Sports 
     #Basketball
     #Volleyball
     #Soccer
@@ -43,7 +43,8 @@ Blogs
 </div>
 <div class="column">
 <h2> Social Media Accounts </h2>
-<p> #Facebook 
+<img src="./imgs/soc.jpg" width="100" height="100" class="mypic" style="margin-left:170px">
+<p style="text-align: center;"> #Facebook 
     #Twitter 
     #Instagram 
     #Youtube 
@@ -52,7 +53,8 @@ Blogs
 </div>
 <div class="column">
 <h2> Locations </h2>
-<p> #Tarlac #Pampanga #Bataan #Batanes #Olongapo #Bataan #Cebu</p>
+<img src="./imgs/home.png" width="100" height="100" class="mypic" style="margin-left:170px">
+<p style=""text-align:center> #Tarlac #Pampanga #Bataan #Batanes #Olongapo #Bataan #Cebu</p>
 </div>
 </div>
 <!-- footer Section -->
@@ -62,6 +64,25 @@ Blogs
     <a href = "contact.html">Contact Us</a>  
 </div>
 </div>
+<script>
+
+    function getRandom(max, min){
+        return Math.floor(Math.random()*(max-min)+min);
+    }
+    
+    document.body.addEventListener('mouseover',newEvent());
+    
+    function newEvent(){
+        let color1, color2, color3,getRgb;
+        color1=getRandom(255,0);
+        color2=getRandom(255,0);
+        color3=getRandom(255,0);
+        getRgb = `rgb(${color1},${color2},${color3})`;
+    
+        document.body.style.background = getRgb;
+    }
+    
+    </script>
 </body>
 
 </html>

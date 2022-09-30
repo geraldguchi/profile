@@ -52,5 +52,24 @@ Portfolio
     <a href = "contact.html">Contact Us</a>
 </div>
 </div>
+<script>
+
+    function getRandom(max, min){
+        return Math.floor(Math.random()*(max-min)+min);
+    }
+    
+    document.body.addEventListener('mouseover',newEvent());
+    
+    function newEvent(){
+        let color1, color2, color3,getRgb;
+        color1=getRandom(255,0);
+        color2=getRandom(255,0);
+        color3=getRandom(255,0);
+        getRgb = `rgb(${color1},${color2},${color3})`;
+    
+        document.body.style.background = getRgb;
+    }
+    
+    </script>
 </body>
 </html>

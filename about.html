@@ -33,16 +33,19 @@ About our Website
 <div class="container">
 <div class="column">
 <h2> Founder </h2>
+<img src="./imgs/prof.jpg" class="mypic" style="margin-left: 170px;" alt="">
 <p> This website has been created by "Christian Gerald Y. Guiterrez" to 
     help people achieve their goal on what sports are they into</p>
 </div>
 <div class="column">
 <h2> Goals </h2>
+<img src="./imgs/nba.png" class="mypic" style="margin-left: 135px;" alt="">
 <p> The goal of this website is to help people make their sports better and 
     enjoy all the time while not thinking too much about their talent</p>
 </div>
 <div class="column">
 <h2> Values </h2>
+<img src="./imgs/angel.jpg" class="mypic" style="margin-left: 170px;" alt="">
 <p> We value every athletes feelings that is 
     why we are doing are very best to build a connection with them while
      they are staying with us and also build a trust with them to know that
@@ -56,5 +59,24 @@ About our Website
     <a href = "contact.html">Contact Us</a>
 </div>
 </div>
+<script>
+
+    function getRandom(max, min){
+        return Math.floor(Math.random()*(max-min)+min);
+    }
+    
+    document.body.addEventListener('mouseover',newEvent());
+    
+    function newEvent(){
+        let color1, color2, color3,getRgb;
+        color1=getRandom(255,0);
+        color2=getRandom(255,0);
+        color3=getRandom(255,0);
+        getRgb = `rgb(${color1},${color2},${color3})`;
+    
+        document.body.style.background = getRgb;
+    }
+    
+    </script>
 </body>
 </html>
